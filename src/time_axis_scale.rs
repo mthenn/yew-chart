@@ -118,9 +118,11 @@ impl Iterator for TimeScaleInclusiveIter {
 
 #[cfg(test)]
 mod tests {
-    use super::*;
-
     use std::ops::Sub;
+
+    use chrono::LocalResult;
+
+    use super::*;
 
     #[test]
     fn test_scale() {
